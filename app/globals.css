@@ -1,0 +1,47 @@
+/* globals.css */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.woff2') format('woff2'),
+       url('/fonts/Poppins-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Bold.woff2') format('woff2'),
+       url('/fonts/Poppins-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Nunito Sans', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Style the scrollbar width */
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Style the track (background of the scrollbar) */
+  body::-webkit-scrollbar-track {
+    background:rgb(255, 53, 87);
+  }
+  
+  /* Style the scrollbar thumb (the draggable part of the scrollbar) */
+  body::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Yellow color */
+    border-radius: 6px; /* Rounded corners */
+    border: 3px solid rgb(255, 53, 87); /* Blue border */
+  }
+  

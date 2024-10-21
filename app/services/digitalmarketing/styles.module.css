@@ -1,0 +1,105 @@
+.bestServices {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    text-align: center;
+}
+
+.bestServices h2 {
+    font-size: 3rem;
+    color:black; 
+    margin-bottom: 20px;
+}
+
+
+.bestServices h2 span{
+    color: rgb(255, 55, 87);
+}
+.description {
+    font-size: 0.9em;
+    color: #838383;
+    font-family: "Nunito Sans",sans-serif;
+    margin-bottom: 30px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px;
+}
+
+.features li {
+    font-size: 1em;
+    color: black;
+    margin: 10px 0;
+}
+
+.contactButton {
+    padding: 10px 30px;
+    font-size: 1em;
+    color: #fff;
+    font-family: "Poppins",sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: rgb(255, 55, 87);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.contactButton:hover {
+    background:none;
+    color: rgb(255, 55, 87);
+    border: 1px solid rgb(255, 55, 87);
+}
+
+@media screen and (max-width: 768px) {
+    .bestServices h2 {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 0.85em;
+    }
+
+    .features li {
+        font-size: 0.9em;
+    }
+
+    .contactButton {
+        font-size: 0.9em;
+        padding: 8px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bestServices {
+        padding: 20px;
+    }
+
+    .bestServices h2 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.75em;
+    }
+
+    .features li {
+        font-size: 0.8em;
+    }
+
+    .contactButton {
+        font-size: 0.75rem;
+        padding: 7px 20px;
+    }
+}

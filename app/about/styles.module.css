@@ -1,0 +1,462 @@
+
+  
+  
+    .aboutUs{
+      margin-top: 10vmin;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+  
+  
+    .aboutUs .about1{
+      text-align: center;
+    }
+  
+  
+    .about1 img{
+      width: 900px;
+      height: auto;
+    }
+  
+  
+    .about1 .contents{
+      display: flex;
+      text-align: start;
+      align-content: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    
+  
+    .contents .content{
+      margin: 4vmin;
+    }
+  
+  
+    .contents .content h3{
+      font-family: 'Poppins',sans-serif;
+      font-size: 1.3em;
+      color: black;
+    }
+  
+  
+    .contents .content span{
+      color: #838383;
+      font-size: 0.8em;
+      font-family: 'Poppins',sans-serif;
+  
+    }
+  
+  
+  
+  
+    .aboutUs .about2{
+      margin-top: 10vmin;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      text-align: center;
+      gap: 10vmin;
+      align-items: center;
+      align-content: center;
+    }
+  
+    .about2 img{
+      width: 800px;
+      height: auto;
+    }
+  
+  
+    .about2 i{
+      color:rgb(255,55, 87);
+      font-size: 2.5em;
+    }
+  
+  
+    .about2 h6{
+      color: #838383;
+      font-size: 0.8em;
+      font-weight: normal;
+      font-family: 'Poppins',sans-serif;
+    }
+  
+  
+  
+    .about2 .profile{
+      display: flex;
+      justify-content: center;
+      margin-top: 3vmin;
+    }
+  
+  
+    .profile img{
+      width: 50px;
+      height: auto;
+      border-radius: 50%;
+      border-radius: 1px solid black;
+    }
+  
+  
+    .profile .content{
+      margin-left: 2vmin;
+    }
+  
+  
+    .profile .content h4{
+      font-size: 1em;
+      color-scheme: black;
+      font-weight: 600;
+      font-family: 'Nunito Sans',sans-serif;
+    }
+  
+  
+    .profile .content span{
+      color: #838383;
+      font-size: 0.75em;
+      font-family: 'Poppins',sans-serif;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+    
+  
+  
+  
+  
+  
+  
+      @media screen and (max-width:1400px) {
+        .about1 img{
+          width: 800px;
+          height: auto;
+        }    
+        .contents .content{
+          margin: 2.5vmin;
+        }
+  
+        .contents .content h3{
+          font-size: 1.5em;
+        }
+  
+  
+        .contents .content span{
+          font-size: 0.7em;
+        }
+      }
+  
+  
+  
+  
+  
+  
+      
+  
+      @media screen and (max-width:1200px) {
+        .about1 img{
+          width: 750px;
+          height: auto;
+        }    
+        .contents .content{
+          margin: 2vmin;
+        }
+  
+        .contents .content h3{
+          font-size: 1.4em;
+        }
+  
+  
+        .contents .content span{
+          font-size: 0.65em;
+        }
+      }
+  
+  
+  
+      
+  
+      @media screen and (max-width:1000px) {
+        .about1 img{
+          width: 700px;
+          height: auto;
+        }    
+        .contents .content{
+          margin: 2vmin;
+        }
+  
+        .contents .content h3{
+          font-size: 1.4em;
+        }
+  
+  
+        .contents .content span{
+          font-size: 0.65em;
+        }
+      }
+  
+  
+  
+  
+      
+      
+  
+      @media screen and (max-width:800px) {
+        .about1 img{
+          width: 550px;
+          height: auto;
+        }    
+        .contents .content h3{
+          font-size: 1.2em;
+        }
+  
+  
+        .contents .content span{
+          font-size: 0.65em;
+        }
+      }
+  
+  
+  
+      @media screen and (max-width:600px) {
+        .about1 img{
+          width: 400px;
+          height: auto;
+        }    
+
+        .contents .content{
+            text-align: center;
+        }
+        .contents .content h3{
+          font-size: 1em;
+        }
+  
+  
+        .contents .content span{
+          font-size: 0.6em;
+        }
+      }
+  
+  
+      @media screen and (max-width:450px) {
+        .about1 img{
+          width: 250px;
+          height: auto;
+        }    
+        .contents .content h3{
+          font-size: 0.9em;
+        }
+  
+  
+        .contents .content span{
+          font-size: 0.5em;
+        }
+      }
+  
+  
+  
+  
+      @media screen and (max-width:1400px) {
+        .aboutUs .about2{
+          gap: 5vmin;
+        }
+  
+        .about2 img{
+          width: 500px;
+          height: auto;
+        }
+  
+        .about2 span{
+          font-size: 3.5em;
+        }
+  
+        .about2 h6{
+          font-size: 0.8em;
+        }
+  
+        .profile img{
+          width: auto;
+          height: auto;
+        }
+  
+        .profile .content h4{
+          font-size: 1em;
+        }
+  
+        .profile .content span{
+          font-size: 0.8em;
+        }
+  
+        
+      }
+  
+  
+  
+      @media screen and (max-width:1200px) {
+        .aboutUs .about2{
+          gap: 3vmin;
+        }
+  
+        .about2 img{
+          width: 500px;
+          height: auto;
+        }
+  
+        .about2 span{
+          font-size: 2.8em;
+        }
+  
+        .about2 h6{
+          font-size: 0.7em;
+        }
+  
+        .profile img{
+          width: auto;
+          height: auto;
+        }
+  
+        .profile .content h4{
+          font-size: 0.9em;
+        }
+  
+        .profile .content span{
+          font-size: 0.75em;
+        }
+  
+        
+      }
+  
+  
+  
+  
+  
+      
+  
+  
+      @media screen and (max-width:950px) {
+        .aboutUs .about2{
+          gap: 1.5vmin;
+        }
+  
+        .about2 img{
+          width: 400px;
+          height: auto;
+        }
+  
+        .about2 span{
+          font-size: 2.6em;
+        }
+  
+        .about2 h6{
+          font-size: 0.6em;
+        }
+  
+        .profile img{
+          width: auto;
+          height: auto;
+        }
+  
+        .profile .content h4{
+          font-size: 0.8em;
+        }
+  
+        .profile .content span{
+          font-size: 0.7em;
+        }
+  
+        
+      }
+  
+  
+  
+  
+      
+  
+      @media screen and (max-width:750px) {
+        .aboutUs .about2{
+          flex-direction: column;
+        }
+  
+        .about2 img{
+          width: 450px;
+          height: auto;
+        }
+  
+        .about2 span{
+          font-size: 2.8em;
+        }
+  
+        .about2 h6{
+          font-size: 0.7em;
+        }
+  
+        .profile img{
+          width: auto;
+          height: auto;
+        }
+  
+        .profile .content h4{
+          font-size: 1em;
+        }
+  
+        .profile .content span{
+          font-size: 0.9em;
+        }
+  
+  
+      }
+  
+  
+  
+  
+  
+  
+      
+      @media screen and (max-width:500px) {
+        .aboutUs .about2{
+          flex-direction: column;
+        }
+  
+        .about2 img{
+          width: 250px;
+          height: auto;
+        }
+  
+        .about2 span{
+          font-size: 2em;
+        }
+  
+        .about2 h6{
+          font-size: 0.5em;
+        }
+  
+        .profile img{
+          width: auto;
+          height: auto;
+        }
+  
+        .profile .content h4{
+          font-size: 0.8em;
+        }
+  
+        .profile .content span{
+          font-size: 0.8em;
+        }
+  
+        
+      }
+  
+  
+  

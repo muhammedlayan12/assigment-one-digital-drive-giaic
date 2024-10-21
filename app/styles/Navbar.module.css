@@ -1,0 +1,234 @@
+.navbar {
+    margin-top: 2vmin;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background: transparent;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+}
+
+.navbar .name {
+    font-size: 1.4em;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar .name span {
+    color: rgb(255, 53, 87);
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    margin: 1.5vmin;
+    font-weight: 400;    
+    position: relative;
+}
+
+.navbar ul li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .humburger {
+    display: none;
+    font-weight: bolder;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.navbar .sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px black;
+    height: 100%;
+    z-index: 1000;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.navbar .cut {
+    position: absolute;
+    font-size: 2em;
+    top: 3%;
+    right: 4%;
+    font-weight: 400;
+    color: black;
+    cursor: pointer;
+}
+
+.navbar .sideMenu ul {
+    left: 13%;
+    top: 22%;
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.navbar .sideMenu ul li {
+    margin: 5vmin;
+}
+
+.navbar .sideMenu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 410;
+    transition: text-decoration 0.3s;
+}
+
+.navbar .sideMenu ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.navbar .sideMenu.active {
+    transform: translateX(0%);
+    opacity: 1;
+    display: block;
+}
+
+@media screen and (max-width: 1400px) {
+    .navbar {
+        font-size: 1em;
+    }
+    .navbar .name {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navbar .navigation {
+        display: none;
+    }
+    .navbar .humburger {
+        font-size: 1.5em;
+        display: block;
+    }
+    .navbar .name {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar {
+        justify-content: space-around;
+        gap: 16vmin;
+        margin-top: 2vmin;
+    }
+    .navbar .humburger {
+        font-size: 1.5em;
+        display: block;
+    }
+    .navbar .name {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        justify-content: space-around;
+        gap: 12vmin;
+        margin-top: 2vmin;
+    }
+    .navbar .humburger {
+        font-size: 1.4em;
+        display: block;
+    }
+    .navbar .name {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .navbar {
+        justify-content: space-around;
+        gap: 9vmin;
+        margin-top: 2vmin;
+    }
+    .navbar .humburger {
+        font-size: 1.1em;
+        display: block;
+    }
+    .navbar .name {
+        font-size: 1.2em;
+    }
+}
+
+
+.servicesDropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 3px black;
+    z-index: 100;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.servicesDropdown li {
+    margin: 1vmin;
+}
+
+.servicesDropdown li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.servicesDropdown li a:hover {
+    color: rgb(255, 53, 87);
+}
+
+.servicesDropdown li a::after {
+    display: none;
+}
+
+.servicesDropdown li a:hover::after {
+    display: none;
+}
+
+.orderlist{
+    list-style-type:disc;
+    display:flex;
+    flex-direction:column;
+}
+
+.orderlist li a{
+    font-size:0.8em;
+    color:#333;
+}
